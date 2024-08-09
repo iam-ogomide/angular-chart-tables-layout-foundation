@@ -1,0 +1,103 @@
+
+    
+    <!-- OFFCANVAS  // SIDEBAR BASICALLY-->
+    <div class=" bg-dark text-white h-100 " >
+
+        <!-- SIDE MENU DETAILS  -->
+        <div class=" P-0">
+          <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <div class="">
+                    <li>
+                        <div class="small fw-bold text-uppercase px-3 pt-2" routerLinkActive="list-item-active">core</div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-speedometer2"></i>
+                            </span>
+                            <span routerLink="/">Dashboard</span>
+                        </a>
+                    </li>
+                </div>
+                <!-- Divider  -->
+                <li class="my-4">
+                    <hr class="dropdown-divider">
+                </li>
+
+                <div class="">
+                    <li>
+                        <div class="small fw-bold text-uppercase px-3" >Posts</div>
+                    </li>
+                    <!-- dropdown menu  -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="me-2">
+                                <i class="bi bi-layout-split"></i>
+                            </span>
+                            <span class="">Layouts</span>
+                            <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <div class="">
+                              <ul class="navbar-nav ps-3">
+                                <li class="">
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2">
+                                            <i class="bi bi-arrow-through-heart-fill"></i>
+                                        </span>
+                                        <span class="">Nested Link</span>
+                                    </a>
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2">
+                                            <i class="bi bi-arrow-through-heart-fill"></i>
+                                        </span>
+                                        <span class="">Nested Link</span>
+                                    </a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <a href="#" class="nav-link px-3" routerLink="/posts" routerLinkActive="list-item-active">
+                    <span class="me-2">
+                        <i class="bi bi-bar-chart"></i>
+                    </span>
+                    <span>Proper posts</span>
+                </a>
+
+                <!-- Divider  -->
+                <li class="my-4">
+                    <hr class="dropdown-divider">
+                </li>
+
+                <div class="">
+                    <li>
+                        <div class="small fw-bold text-uppercase px-3" routerLink="/articles" routerLinkActive="list-item-active">ADDONS</div>
+                    </li>
+                    <!-- dropdown menu  -->
+                    <div class="mt-2">
+                        <li>
+                            <a href="#" class="nav-link px-3">
+                                <span class="me-2">
+                                    <i class="bi bi-bar-chart"></i>
+                                </span>
+                                <span>Charts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-3">
+                                <span class="me-2">
+                                    <i class="bi bi-table"></i>
+                                </span>
+                                <span>Tables</span>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <!-- OFFCANVAS  -->
