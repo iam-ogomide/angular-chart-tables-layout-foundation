@@ -11,7 +11,14 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule} from '@angular/material/list';
 import { AreaComponent } from '../widgets/area/area.component';
-// import { HighchartsChartModule } from 'highcharts-angular';
+import { UsertableComponent } from 'src/app/component/usertable/usertable.component';
+import { MatSliderModule} from '@angular/material/slider';
+import { MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule} from '@angular/material/sort';
+import {MatCardModule} from "@angular/material/card";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatDialogModule} from "@angular/material/dialog"
 
 
 
@@ -20,7 +27,8 @@ import { AreaComponent } from '../widgets/area/area.component';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    AreaComponent
+    AreaComponent,
+    UsertableComponent
   ],
   imports: [
     CommonModule,
@@ -31,12 +39,20 @@ import { AreaComponent } from '../widgets/area/area.component';
     MatMenuModule,
     MatButtonModule,
     MatListModule,
+    MatSliderModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatDialogModule
   ],
   exports:[
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    AreaComponent
+    AreaComponent,
+    UsertableComponent
   ]
 })
 export class SharedModule { }
