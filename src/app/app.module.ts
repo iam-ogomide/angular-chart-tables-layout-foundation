@@ -7,6 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { DefaultModule } from './layouts/default/default.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+
 
 
 
@@ -16,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     
+    
+    
 
   ],
   imports: [
@@ -24,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatButtonModule,
     DefaultModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

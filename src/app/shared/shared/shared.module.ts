@@ -19,6 +19,15 @@ import { MatSortModule} from '@angular/material/sort';
 import {MatCardModule} from "@angular/material/card";
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatDialogModule} from "@angular/material/dialog"
+import { AlertBoxComponent } from 'src/app/component/alert-box/alert-box.component';
+import { DialogBoxComponent } from 'src/app/component/dialog-box/dialog-box.component';
+import { TableComponent } from 'src/app/component/table/table.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+// import { MatTableExporterModule } from '@angular-material-extensions/table-exporter';
 
 
 
@@ -28,7 +37,10 @@ import {MatDialogModule} from "@angular/material/dialog"
     SidebarComponent,
     FooterComponent,
     AreaComponent,
-    UsertableComponent
+    UsertableComponent,
+    TableComponent,
+    DialogBoxComponent,
+    AlertBoxComponent,
   ],
   imports: [
     CommonModule,
@@ -45,14 +57,23 @@ import {MatDialogModule} from "@angular/material/dialog"
     MatSortModule,
     MatCardModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatProgressSpinnerModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatSelectModule,
+    
   ],
   exports:[
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
     AreaComponent,
-    UsertableComponent
+    UsertableComponent,
+    TableComponent,
+    DialogBoxComponent,
+    AlertBoxComponent,
   ]
 })
 export class SharedModule { }

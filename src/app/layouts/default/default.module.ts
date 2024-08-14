@@ -10,6 +10,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MychartComponent } from 'src/app/component/mychart/mychart.component';
 import { SecondchartComponent } from 'src/app/component/secondchart/secondchart.component';
 import { ApichartsComponent } from 'src/app/component/apicharts/apicharts.component';
+import { ArchivesComponent } from 'src/app/modules/archives/archives.component';
 
 
 @NgModule({
@@ -19,14 +20,16 @@ import { ApichartsComponent } from 'src/app/component/apicharts/apicharts.compon
     PostsComponent,
     MychartComponent,
     SecondchartComponent,
-    ApichartsComponent
+    ApichartsComponent,
+    ArchivesComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    
   ]
 })
 export class DefaultModule { }
